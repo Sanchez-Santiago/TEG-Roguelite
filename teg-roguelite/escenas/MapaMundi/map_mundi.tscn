@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cudbfjuoj8uxm"]
+
+[ext_resource type="Texture2D" uid="uid://b6qir7lmnq4qd" path="res://assets/TEGmpa.png" id="1_b8q2a"]
+
+[node name="MapMundi" type="Node2D" unique_id=178169857]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=737269141]
+texture = ExtResource("1_b8q2a")
