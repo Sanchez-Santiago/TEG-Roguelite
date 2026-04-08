@@ -11,7 +11,9 @@ config_version=5
 [application]
 
 config/name="TEG Roguelite"
+run/main_scene="uid://bae51o7o8cs2g"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
 config/icon="res://icon.svg"
 
 [physics]
@@ -21,3 +23,4 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+environment/bg_color=Color(0.14, 0.14, 0.14, 1)

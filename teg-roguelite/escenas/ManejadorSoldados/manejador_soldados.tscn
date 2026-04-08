@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ckvagoki84b22"]
+
+[ext_resource type="Script" uid="uid://qi81v7ccclme" path="res://escenas/ManejadorSoldados/manejador_soldados.gd" id="1_baju2"]
+
+[node name="ManejadorSoldados" type="Node" unique_id=664318956]
+script = ExtResource("1_baju2")

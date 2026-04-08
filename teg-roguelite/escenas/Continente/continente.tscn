@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bx21lxi4svdxt"]
+
+[ext_resource type="Script" uid="uid://dy38nox2vwsk0" path="res://escenas/Continente/continente.gd" id="1_qbojk"]
+
+[node name="Continente" type="Node2D" unique_id=1836244713]
+script = ExtResource("1_qbojk")

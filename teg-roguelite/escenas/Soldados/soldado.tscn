@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b2cb8jdqebw48"]
+
+[ext_resource type="Texture2D" uid="uid://bag7l1lcwdo1t" path="res://icon.svg" id="1_03rop"]
+[ext_resource type="Script" uid="uid://dxgct8n4k631p" path="res://escenas/Soldados/soldado.gd" id="1_cllod"]
+[ext_resource type="Script" uid="uid://kydpen7dl6r" path="res://escenas/Soldados/MovimientoSoldado.gd" id="2_lknmf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lknmf"]
+radius = 70.34913
+
+[node name="Soldado" type="Node2D" unique_id=1670803673]
+script = ExtResource("1_cllod")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1541769437]
+texture = ExtResource("1_03rop")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=255823769]
+script = ExtResource("2_lknmf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=339458627]
+shape = SubResource("CircleShape2D_lknmf")

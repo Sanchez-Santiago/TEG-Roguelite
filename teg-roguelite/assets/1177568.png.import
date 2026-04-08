@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvamjs0mqc2q6"
-valid=false
+uid="uid://llk8gwbvdjc0"
+path="res://.godot/imported/1177568.png-227736cbdec4128dc1ae7a373f3b6901.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/TEGmpa.jpg"
+source_file="res://assets/1177568.png"
+dest_files=["res://.godot/imported/1177568.png-227736cbdec4128dc1ae7a373f3b6901.ctex"]
 
 [params]
 

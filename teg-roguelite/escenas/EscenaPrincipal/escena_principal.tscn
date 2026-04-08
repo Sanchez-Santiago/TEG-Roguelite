@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bae51o7o8cs2g"]
+
+[ext_resource type="PackedScene" uid="uid://c00tobckxue38" path="res://escenas/ControladorPartida/controlador_partida.tscn" id="1_qbmpt"]
+[ext_resource type="PackedScene" uid="uid://cudbfjuoj8uxm" path="res://escenas/MapaMundi/map_mundi.tscn" id="1_rs7i4"]
+[ext_resource type="PackedScene" uid="uid://dhhomws72kr70" path="res://escenas/Player/player.tscn" id="3_75vv6"]
+[ext_resource type="PackedScene" uid="uid://bx21lxi4svdxt" path="res://escenas/Continente/continente.tscn" id="3_arwwb"]
+[ext_resource type="PackedScene" uid="uid://bcx3kg3ahvpx2" path="res://escenas/Pais/pais.tscn" id="4_arwwb"]
+
+[node name="EscenaPrincipal" type="Node" unique_id=1793785234]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1578390733]
+
+[node name="ControladorPartida" parent="." unique_id=1429298703 node_paths=PackedStringArray("list_player", "gameMap") instance=ExtResource("1_qbmpt")]
+list_player = [NodePath("../Player1"), NodePath("../Player2"), NodePath("../Player3"), NodePath("../Player4")]
+gameMap = NodePath("../MapMundi")
+
+[node name="MapMundi" parent="." unique_id=178169857 node_paths=PackedStringArray("territories") instance=ExtResource("1_rs7i4")]
+territories = [NodePath("America")]
+
+[node name="America" parent="MapMundi" unique_id=1836244713 node_paths=PackedStringArray("list_Pais") instance=ExtResource("3_arwwb")]
+position = Vector2(268.0443, 268.2434)
+list_Pais = [NodePath("Argentina")]
+
+[node name="Argentina" parent="MapMundi/America" unique_id=2008446228 instance=ExtResource("4_arwwb")]
+position = Vector2(-404.0443, -126.24341)
+
+[node name="Chile" parent="MapMundi/America" unique_id=1878225674 instance=ExtResource("4_arwwb")]
+position = Vector2(-439.0443, -133.24341)
+
+[node name="Brazil" parent="MapMundi/America" unique_id=126949929 instance=ExtResource("4_arwwb")]
+position = Vector2(-360.0443, -210.24341)
+
+[node name="Uruguay" parent="MapMundi/America" unique_id=2093815105 instance=ExtResource("4_arwwb")]
+position = Vector2(-360.0443, -142.24341)
+
+[node name="Conlombia" parent="MapMundi/America" unique_id=1627575583 instance=ExtResource("4_arwwb")]
+position = Vector2(-443.0443, -231.24341)
+
+[node name="Player1" parent="." unique_id=904503623 instance=ExtResource("3_75vv6")]
+position = Vector2(-540, 72)
+
+[node name="Player2" parent="." unique_id=1603103707 instance=ExtResource("3_75vv6")]
+position = Vector2(-539, 120)
+
+[node name="Player3" parent="." unique_id=31542562 instance=ExtResource("3_75vv6")]
+position = Vector2(-539, 166)
+
+[node name="Player4" parent="." unique_id=56509168 instance=ExtResource("3_75vv6")]
+position = Vector2(-539, 211)

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bcx3kg3ahvpx2"]
+
+[ext_resource type="Script" uid="uid://xl0321d42tbf" path="res://escenas/Pais/pais.gd" id="1_wsb6p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p8g3y"]
+
+[node name="Pais" type="Node2D" unique_id=2008446228]
+script = ExtResource("1_wsb6p")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1604183774]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=932557969]
+shape = SubResource("CircleShape2D_p8g3y")

@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cudbfjuoj8uxm"]
 
+[ext_resource type="Script" uid="uid://jv6n7f5lmqkg" path="res://escenas/MapaMundi/map_mundi.gd" id="1_3c62d"]
 [ext_resource type="Texture2D" uid="uid://b6qir7lmnq4qd" path="res://assets/TEGmpa.png" id="1_b8q2a"]
 
 [node name="MapMundi" type="Node2D" unique_id=178169857]
+script = ExtResource("1_3c62d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=737269141]
 texture = ExtResource("1_b8q2a")
